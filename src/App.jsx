@@ -1,4 +1,4 @@
- import { useState } from 'react'
+import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import "./App.css";
@@ -39,8 +39,7 @@ function App() {
             size={24}
             style={{
               marginRight: 10,
-              cursor: "pointer"
-
+              cursor: "pointer" 
             }}
             color={(hoverValue || currentValue) > index ? colors.orange : colors.grey}
             onClick={() => handleClick(index + 1)}
