@@ -1,8 +1,6 @@
-
-
 const Feedback = () => {
   return (
-    <div>Feedback</div>
+    <div className="text-center">Feedback</div>
   )
 }
 
