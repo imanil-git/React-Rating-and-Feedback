@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home.jsx";
 import Feedback from "../pages/Feedback.jsx";
 import Navbar from "../components/Navbar.jsx";
+import Sliders from "../pages/Slider.jsx";
 
 const NWRapper = () => {
     const navItems = [
@@ -14,6 +15,10 @@ const NWRapper = () => {
         {
             name: "Feedback",
             path: "/feedback"
+        },
+        {
+          name: "Slider",
+          path: "/slider"
         }
     ]
   return (
@@ -22,6 +27,7 @@ const NWRapper = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/feedback" element={<Feedback />} />
+        <Route path="/slider" element={< Sliders />} />
       </Routes>
     </>
   );
