@@ -5,6 +5,7 @@ import Home from "../pages/Home.jsx";
 import Feedback from "../pages/Feedback.jsx";
 import Navbar from "../components/Navbar.jsx";
 import Sliders from "../pages/Slider.jsx";
+import Anil from "../pages/Anil.jsx";
 
 const NWRapper = () => {
     const navItems = [
@@ -19,6 +20,10 @@ const NWRapper = () => {
         {
           name: "Slider",
           path: "/slider"
+        },
+        {
+          name:"Anil",
+          path: "/anil"
         }
     ]
   return (
@@ -28,6 +33,7 @@ const NWRapper = () => {
         <Route path="/" element={<Home />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/slider" element={< Sliders />} />
+        <Route path="/anil" element={< Anil />} />
       </Routes>
     </>
   );
