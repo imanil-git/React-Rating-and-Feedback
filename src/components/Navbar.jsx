@@ -3,12 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ items }) => {
+  console.log("navbar items:", items);
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Navbar
+            LOGO
           </a>
           <button
             className="navbar-toggler"
@@ -25,10 +26,12 @@ const Navbar = ({ items }) => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               {items.map((item, index) => (
                 <li className="nav-item" key={index}>
-                  <Link to={item.path}>
-                    <a className="nav-link active" aria-current="page" href="#">
-                      {item.name}
-                    </a>
+                  <Link
+                    className="nav-link active"
+                    aria-current="page"
+                    to={item.path}
+                  >
+                    {item.name}
                   </Link>
                 </li>
               ))}
